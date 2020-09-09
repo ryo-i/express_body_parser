@@ -16,6 +16,7 @@ const postFetch = () => {
     }).then((response) => {
         if(!response.ok) {
             console.log('error!');
+            throw new Error('error');
         }
         console.log('ok!');
         console.log(response);
